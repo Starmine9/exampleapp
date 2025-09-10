@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build Image') {
             steps {
-                sh "docker build -t $APP_NAME:latest -f Dockerfile $APP_NAME"
+                sh "docker build -t $APP_NAME:latest -f dockerfile $APP_NAME"
             }
         }
 
