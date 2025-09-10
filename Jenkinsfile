@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh "whoami"
                 sh "groups"
-                sh "docker build -t $APP_NAME:latest -f dockerfile $APP_NAME"
+                sh "docker build -t $APP_NAME:latest -f dockerfile ."
             }
         }
 
