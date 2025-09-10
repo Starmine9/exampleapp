@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         APP_NAME = "exampleapp"
-    }
+    } 
  
     stages {
         stage('Checkout') {
